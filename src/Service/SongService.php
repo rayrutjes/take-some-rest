@@ -23,7 +23,7 @@ final class SongService
     }
 
     /**
-     * @param $userId
+     * @param integer $userId
      *
      * @return Song
      */

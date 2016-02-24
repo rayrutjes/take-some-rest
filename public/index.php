@@ -18,7 +18,7 @@ $router->addRoute(
     new \RayRutjes\Tsr\Http\Route(
         'GET',
         '/users/:user_id',
-        function (...$args) use ($userResource) {
+        function(...$args) use ($userResource) {
             return $userResource->get(...$args);
         }
     )
@@ -32,7 +32,7 @@ $router->addRoute(
     new \RayRutjes\Tsr\Http\Route(
         'GET',
         '/songs/:song_id',
-        function (...$args) use ($songResource) {
+        function(...$args) use ($songResource) {
             return $songResource->get(...$args);
         }
     )
@@ -44,7 +44,7 @@ $router->addRoute(
     new \RayRutjes\Tsr\Http\Route(
         'GET',
         '/users/:user_id/favorites',
-        function (...$args) use ($userFavoriteResource) {
+        function(...$args) use ($userFavoriteResource) {
             return $userFavoriteResource->list(...$args);
         }
     )
@@ -53,7 +53,7 @@ $router->addRoute(
     new \RayRutjes\Tsr\Http\Route(
         'POST',
         '/users/:user_id/favorites',
-        function (...$args) use ($userFavoriteResource) {
+        function(...$args) use ($userFavoriteResource) {
             return $userFavoriteResource->post(...$args);
         }
     )
@@ -62,7 +62,7 @@ $router->addRoute(
     new \RayRutjes\Tsr\Http\Route(
         'DELETE',
         '/users/:user_id/favorites/:song_id',
-        function (...$args) use ($userFavoriteResource) {
+        function(...$args) use ($userFavoriteResource) {
             return $userFavoriteResource->delete(...$args);
         }
     )
