@@ -12,6 +12,7 @@ before_script:
   - mysql -e 'create database tsr;'
   - mysql -uroot tsr < resources/tsr_2016-02-24.sql
   - cp config.sample.php config.php
+  - composer install
 
 matrix:
 allow_failures:
