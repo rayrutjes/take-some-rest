@@ -29,8 +29,9 @@ final class JsonResponse implements ResponseInterface
      * @var array
      */
     private $statusMessages = [
-        self::STATUS_OK      => 'OK',
-        self::STATUS_CREATED => 'CREATED',
+        self::STATUS_OK        => 'OK',
+        self::STATUS_CREATED   => 'CREATED',
+        self::STATUS_NOT_FOUND => 'NOT FOUND',
     ];
 
     /**

@@ -49,6 +49,9 @@ final class Request
         if (isset($_SERVER['CONTENT_TYPE']) && $_SERVER['CONTENT_TYPE'] == 'application/json') {
             $input = file_get_contents('php://input');
             $body = json_decode($input, true);
+            if (!is_array($body)) {
+                $body = [];
+            }
         }
 
         return new self($_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI'], $body);
