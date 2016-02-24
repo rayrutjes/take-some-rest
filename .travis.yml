@@ -10,7 +10,7 @@ services:
 
 before_script:
   - mysql -e 'create database tsr;'
-  - mysql -uroot -p tsr < resources/tsr_2016-02-24.sql
+  - mysql -uroot tsr < resources/tsr_2016-02-24.sql
   - cp config.sample.php config.php
 
 matrix:
