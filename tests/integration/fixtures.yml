@@ -1,0 +1,25 @@
+users:
+  -
+    user_id: 1
+    name: "User 1 name"
+    email: "user1@example.com"
+  -
+    user_id: 2
+    name: "User 2 name"
+    email: "user2@example.com"
+
+songs:
+  -
+    song_id: 1
+    title: "Song 1"
+    duration: 240
+  -
+    song_id: 2
+    title: "Song 2"
+    duration: 200
+  -
+    song_id: 3
+    title: "Song 3"
+    duration: 315
+
+user_favorites:

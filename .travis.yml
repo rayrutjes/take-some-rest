@@ -1,0 +1,19 @@
+language: php
+
+php:
+- 7.0
+- hhvm
+- nightly
+
+services:
+  - mysql
+
+before_script:
+  - mysql -e 'create database tsr;'
+  - mysql -uroot -p tsr < resources/tsr_2016-02-24.sql
+  - cp config.sample.php config.php
+
+matrix:
+allow_failures:
+- php: hhvm
+fast_finish: true
